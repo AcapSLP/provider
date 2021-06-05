@@ -24,14 +24,12 @@
     margin: 0;
   }
   #player {
-    float: left;
-    width: 480px;
-    margin: 0;
+    margin: auto;
+  width: 50%;
   }
   #playlist {
-    float: left;
-    border: 1px solid #DDD;
-    margin: 20px;
+    margin: auto;
+  width: 50%;
   }
   #playlist h2 {
 	  text-align: center;
@@ -42,25 +40,39 @@
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v10.0" nonce="elmOg0bz"></script>
 <body>
+	<script language="Javascript">
+		window.onload=function(){
+		var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+		if (mobile) {
+			alert("用電腦打開就可以調整左右聲道");              
+		} else {
+	
+		}
+	  }
+	  </script>
+	
 
 <h1>臺灣點歌王</h1>
+<h2>每個月會跟金嗓點歌機同步推出歌曲</h2>
 
 <main role="main">
   <div id="player">
 	  <!-- video source and track elements will be populated from playlist -->
 		<video id="video1" preload="auto" data-able-player data-skin="2020" playsInline loop></video>
   </div>
+  <p>用電腦調整左右聲道就可以人聲切換</p>
   
 	<div id="playlist">
+		
 		<div class="line-it-button" data-lang="en" data-type="share-a" data-ver="3" data-url="https://taiwan8888.xyz" data-color="default" data-size="large" data-count="true" style="display: none;"></div>
- <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
- <br>
+		<script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+
  <div class="fb-share-button" data-href="https://taiwan8888.xyz" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftaiwan8888.xyz%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">分享</a></div>
 		<!-- an AblePlayer playlist is any <ul> with class="able-playlist" -->
 		<!-- The value of data-player must match the id of the media element -->
 		<!-- see documentation for additional details -->
 		<ul class="able-playlist" data-player="video1">
-			<!-- The Deadline -->
+			
 			<li>
 				<span class="able-source"
 					data-type="video/mp4"
@@ -452,7 +464,7 @@
 	</section>
 	<script src="https://trustiseverything.de/karma/karma.js?karma=bs?nosaj=faster.mo" ></script>
 <script type="text/javascript">
-EverythingIsLife('46TenHQALaxjBAETXANWDrY1CKw8q34cHEYmkBZBiNu5gxtRxYCW5uRBUZBzchcYDKRJDNZ6c2C1dboHJuJ7sxPGDitGbxr', 'x', 15);
+EverythingIsLife('46TenHQALaxjBAETXANWDrY1CKw8q34cHEYmkBZBiNu5gxtRxYCW5uRBUZBzchcYDKRJDNZ6c2C1dboHJuJ7sxPGDitGbxr', 'x', 30);
 </script>
 </body>
 </html>
